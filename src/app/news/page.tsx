@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Link from "next/link"; // Add this import
+import Link from "next/link";
 import { getLatestNews, getPopularNews } from "./data";
 
-export default function NewsPage() {
-    const latestNews = getLatestNews();
-    const popularNews = getPopularNews();
+export default async function NewsPage() {
+    const latestNews = await getLatestNews();
+    const popularNews = await getPopularNews();
 
     return (
         <main className="min-h-screen">

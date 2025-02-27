@@ -1,9 +1,16 @@
+"use client";
+
+import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { getNewsBySlug } from "../data";
+import { useParams } from "next/navigation";
 
-export default function NewsDetail({ params }: { params: { slug: string } }) {
-    const news = getNewsBySlug(params.slug);
+export default function NewsDetail() {
+    // Use the useParams hook to access the dynamic parameters
+    const params = useParams();
+    const slug = params.slug as string;
+    const news = getNewsBySlug(slug);
 
     if (!news) {
         return (
@@ -73,3 +80,5 @@ export default function NewsDetail({ params }: { params: { slug: string } }) {
         </main>
     );
 }
+
+// Add a separate metadata.tsx file for metadata

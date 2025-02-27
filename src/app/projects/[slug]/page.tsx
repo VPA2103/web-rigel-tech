@@ -1,20 +1,14 @@
+"use client";
+
 import { projects } from "@/app/projects/data";
 import Image from "next/image";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, useParams } from "next/navigation";
 
-export function generateStaticParams() {
-    return projects.map((project) => ({
-        slug: project.id,
-    }));
-}
-
-export default function ProjectDetail({
-    params,
-}: {
-    params: { slug: string };
-}) {
-    const project = projects.find((p) => p.id === params.slug);
+export default function ProjectDetail() {
+    const params = useParams();
+    const slug = params.slug as string;
+    const project = projects.find((p) => p.id === slug);
 
     if (!project) {
         notFound();
@@ -32,17 +26,6 @@ export default function ProjectDetail({
                     </Link>
 
                     <div className="max-w-4xl mx-auto">
-                        {/* <div className="relative w-full rounded-xl overflow-hidden mb-8">
-                            <Image
-                                src={project.image}
-                                alt={project.title}
-                                width={1200}
-                                height={800}
-                                className="w-full h-auto"
-                                priority
-                            />
-                        </div> */}
-
                         <h1 className="text-4xl font-bold text-primary-600 mb-4">
                             {project.title}
                         </h1>
