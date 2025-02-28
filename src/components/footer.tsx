@@ -1,74 +1,90 @@
 import Link from "next/link";
 import Image from "next/image";
+import { serviceLinks, companyLinks } from "../constants/footerLinks";
 
 export default function Footer() {
     return (
-        <footer className="bg-gradient-to-b from-gray-900 to-gray-950 text-white pt-20 pb-8">
+        <footer
+            className="bg-gradient-to-b from-gray-900 to-gray-950 text-white pt-12 md:pt-16 lg:pt-20 pb-8"
+            itemScope
+            itemType="https://schema.org/Organization"
+        >
             <div className="container mx-auto px-4">
-                <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
-                    {/* Company Info */}
-                    <div className="md:col-span-4 space-y-6">
-                        <Link href="/" className="inline-block">
-                            <div className="flex items-center gap-3">
-                                <Image
-                                    src="/logo-nobackground.png"
-                                    alt="DIGIFUND Logo"
-                                    width={40}
-                                    height={40}
-                                />
-                                <div className="flex flex-col">
-                                    <span className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-primary-600">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-12 gap-8 md:gap-10">
+                    {/* Company Info - Full width on mobile, larger on desktop */}
+                    <div className="sm:col-span-2 md:col-span-3 lg:col-span-4 space-y-4 md:space-y-6">
+                        <div className="space-y-2">
+                            <Link href="/" className="inline-block">
+                                <div className="flex items-center gap-3">
+                                    <Image
+                                        src="/logo-nobackground.png"
+                                        alt="DIGIFUND Logo"
+                                        width={40}
+                                        height={40}
+                                    />
+                                    <span className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-primary-600">
                                         DIGIFUND
                                     </span>
-                                    <span className="text-sm text-gray-400">
-                                        CÔNG TY CỔ PHẦN CÔNG NGHỆ DIGIFUND
-                                    </span>
                                 </div>
+                            </Link>
+                            <div>
+                                <span className="text-xs md:text-sm text-gray-400">
+                                    CÔNG TY CỔ PHẦN CÔNG NGHỆ DIGIFUND
+                                </span>
                             </div>
-                        </Link>
-                        <p className="text-gray-400 leading-relaxed">
+                        </div>
+                        <p
+                            className="text-gray-400 leading-relaxed text-sm md:text-base"
+                            itemProp="description"
+                        >
                             Đơn vị tiên phong trong lĩnh vực phát triển web, ứng
                             dụng di động và các giải pháp công nghệ hiện đại cho
                             doanh nghiệp.
                         </p>
                         <div className="flex space-x-4">
-                            {["facebook", "linkedin", "twitter", "youtube"].map(
-                                (social) => (
-                                    <Link
-                                        key={social}
-                                        href={`https://${social}.com/digifund`}
-                                        className="w-10 h-10 rounded-full bg-gray-800 hover:bg-primary-600 flex items-center justify-center transition-colors duration-300"
-                                    >
-                                        <span className="sr-only">
-                                            {social}
-                                        </span>
-                                        <i className={`fab fa-${social}`}></i>
-                                    </Link>
-                                ),
-                            )}
+                            <a
+                                href="https://facebook.com/DIGIFUND"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Facebook"
+                                className="hover:text-blue-400"
+                            >
+                                <i className="fab fa-facebook-f"></i>
+                            </a>
+                            <a
+                                href="https://twitter.com/DIGIFUND"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Twitter"
+                                className="hover:text-blue-400"
+                            >
+                                <i className="fab fa-twitter"></i>
+                            </a>
+                            <a
+                                href="https://linkedin.com/company/DIGIFUND"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="LinkedIn"
+                                className="hover:text-blue-400"
+                            >
+                                <i className="fab fa-linkedin-in"></i>
+                            </a>
                         </div>
                     </div>
 
                     {/* Quick Links */}
-                    <div className="md:col-span-2 space-y-4">
-                        <h4 className="text-lg font-semibold text-white">
-                            Dịch vụ
+                    <div className="sm:col-span-1 md:col-span-1 lg:col-span-2 space-y-3 md:space-y-4">
+                        <h4 className="text-base md:text-lg font-semibold text-white">
+                            Lĩnh vực
                         </h4>
-                        <ul className="space-y-3">
-                            {[
-                                "Web Development",
-                                "Mobile Apps",
-                                "Fintech Solutions",
-                                "E-commerce",
-                                "UI/UX Design",
-                                "Tech Consulting",
-                            ].map((item) => (
-                                <li key={item}>
+                        <ul className="space-y-2 md:space-y-3">
+                            {serviceLinks.map((item) => (
+                                <li key={item.name}>
                                     <Link
-                                        href="#"
-                                        className="text-gray-400 hover:text-primary-400 transition-colors duration-300"
+                                        href={item.href}
+                                        className="text-sm md:text-base text-gray-400 hover:text-primary-400 transition-colors duration-300"
                                     >
-                                        {item}
+                                        {item.name}
                                     </Link>
                                 </li>
                             ))}
@@ -76,23 +92,18 @@ export default function Footer() {
                     </div>
 
                     {/* Company */}
-                    <div className="md:col-span-2 space-y-4">
-                        <h4 className="text-lg font-semibold text-white">
+                    <div className="sm:col-span-1 md:col-span-1 lg:col-span-2 space-y-3 md:space-y-4">
+                        <h4 className="text-base md:text-lg font-semibold text-white">
                             Công ty
                         </h4>
-                        <ul className="space-y-3">
-                            {[
-                                "Về chúng tôi",
-                                "Tin tức",
-                                "Tuyển dụng",
-                                "Liên hệ",
-                            ].map((item) => (
-                                <li key={item}>
+                        <ul className="space-y-2 md:space-y-3">
+                            {companyLinks.map((item) => (
+                                <li key={item.name}>
                                     <Link
-                                        href="#"
-                                        className="text-gray-400 hover:text-primary-400 transition-colors duration-300"
+                                        href={item.href}
+                                        className="text-sm md:text-base text-gray-400 hover:text-primary-400 transition-colors duration-300"
                                     >
-                                        {item}
+                                        {item.name}
                                     </Link>
                                 </li>
                             ))}
@@ -100,45 +111,79 @@ export default function Footer() {
                     </div>
 
                     {/* Contact Info */}
-                    <div className="md:col-span-4 space-y-4">
-                        <h4 className="text-lg font-semibold text-white">
+                    <div className="sm:col-span-2 md:col-span-2 lg:col-span-4 space-y-3 md:space-y-4">
+                        <h4 className="text-base md:text-lg font-semibold text-white">
                             Liên hệ
                         </h4>
-                        <div className="space-y-3">
-                            <p className="flex items-center text-gray-400">
-                                <span className="w-5 mr-3">📍</span>
-                                Số 156 Đường Nam Kỳ Khởi Nghĩa, Phường Bến Nghé,
-                                Quận 1, Thành phố Hồ Chí Minh, Việt Nam
+                        <div className="space-y-2 md:space-y-3">
+                            <p className="flex items-start text-sm md:text-base text-gray-400">
+                                <span className="w-5 mr-2 md:mr-3 flex-shrink-0 mt-0.5">
+                                    📍
+                                </span>
+                                <span
+                                    itemProp="address"
+                                    itemScope
+                                    itemType="https://schema.org/PostalAddress"
+                                >
+                                    <span itemProp="streetAddress">
+                                        Số 156 Đường Nam Kỳ Khởi Nghĩa
+                                    </span>
+                                    ,
+                                    <span itemProp="addressLocality">
+                                        Phường Bến Nghé
+                                    </span>
+                                    ,
+                                    <span itemProp="addressRegion">Quận 1</span>
+                                    ,
+                                    <span itemProp="addressCountry">
+                                        Thành phố Hồ Chí Minh, Việt Nam
+                                    </span>
+                                </span>
                             </p>
-                            <p className="flex items-center text-gray-400">
-                                <span className="w-5 mr-3">📞</span>
-                                (84-28) 1234 5678
+                            <p className="flex items-center text-sm md:text-base text-gray-400">
+                                <span className="w-5 mr-2 md:mr-3 flex-shrink-0">
+                                    📞
+                                </span>
+                                <span itemProp="telephone">0287.3033268</span>
                             </p>
-                            <p className="flex items-center text-gray-400">
-                                <span className="w-5 mr-3">✉️</span>
-                                contact@digifund.vn
+                            <p className="flex items-center text-sm md:text-base text-gray-400">
+                                <span className="w-5 mr-2 md:mr-3 flex-shrink-0">
+                                    📱
+                                </span>
+                                <span itemProp="telephone">
+                                    Hotline: 0938.065.499
+                                </span>
+                            </p>
+                            <p className="flex items-center text-sm md:text-base text-gray-400">
+                                <span className="w-5 mr-2 md:mr-3 flex-shrink-0">
+                                    ✉️
+                                </span>
+                                <span itemProp="email">info@digifund.tech</span>
                             </p>
                         </div>
                     </div>
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="mt-16 pt-8 border-t border-gray-800">
-                    <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                        <p className="text-gray-400 text-sm">
-                            &copy; 2024 CÔNG TY CỔ PHẦN CÔNG NGHỆ DIGIFUND. All
-                            rights reserved.
+                <div className="mt-10 md:mt-12 lg:mt-16 pt-6 md:pt-8 border-t border-gray-800">
+                    <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+                        <p className="text-xs md:text-sm text-gray-400 text-center sm:text-left">
+                            &copy; {new Date().getFullYear()}{" "}
+                            <span itemProp="name">
+                                CÔNG TY CỔ PHẦN CÔNG NGHỆ DIGIFUND
+                            </span>
+                            . All rights reserved.
                         </p>
-                        <div className="flex space-x-6">
+                        <div className="flex space-x-4 md:space-x-6">
                             <Link
                                 href="#"
-                                className="text-gray-400 hover:text-primary-400 text-sm"
+                                className="text-xs md:text-sm text-gray-400 hover:text-primary-400"
                             >
                                 Điều khoản sử dụng
                             </Link>
                             <Link
                                 href="#"
-                                className="text-gray-400 hover:text-primary-400 text-sm"
+                                className="text-xs md:text-sm text-gray-400 hover:text-primary-400"
                             >
                                 Chính sách bảo mật
                             </Link>

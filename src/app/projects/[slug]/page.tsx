@@ -78,24 +78,43 @@ export default function ProjectDetail() {
                                 <h2 className="text-2xl font-semibold mb-6 text-primary-600">
                                     Hình ảnh dự án
                                 </h2>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    {project.gallery.map((image, index) => (
-                                        <div
-                                            key={index}
-                                            className="relative w-full rounded-lg overflow-hidden"
-                                        >
-                                            <Image
-                                                src={image}
-                                                alt={`${
-                                                    project.title
-                                                } gallery ${index + 1}`}
-                                                width={600}
-                                                height={400}
-                                                className="w-full h-auto"
-                                            />
+
+                                {project.gallery.length === 1 ? (
+                                    // Single image - centered with max-width
+                                    <div className="flex justify-center">
+                                        <div className="max-w-2xl w-full">
+                                            <div className="relative rounded-lg overflow-hidden">
+                                                <Image
+                                                    src={project.gallery[0]}
+                                                    alt={`${project.title} gallery`}
+                                                    width={800}
+                                                    height={500}
+                                                    className="w-full h-auto"
+                                                />
+                                            </div>
                                         </div>
-                                    ))}
-                                </div>
+                                    </div>
+                                ) : (
+                                    // Multiple images - grid layout
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        {project.gallery.map((image, index) => (
+                                            <div
+                                                key={index}
+                                                className="relative w-full rounded-lg overflow-hidden"
+                                            >
+                                                <Image
+                                                    src={image}
+                                                    alt={`${
+                                                        project.title
+                                                    } gallery ${index + 1}`}
+                                                    width={600}
+                                                    height={400}
+                                                    className="w-full h-auto"
+                                                />
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
                             </div>
                         </div>
                     </div>

@@ -17,7 +17,7 @@ export const projects: Project[] = [
         id: "project-1",
         title: "Credit Fund Mobile App",
         description:
-            "Developed a comprehensive mobile application for credit fund services including lending, savings, and money transfer features using React Native and Node.js.",
+            "Phát triển ứng dụng di động toàn diện cho các dịch vụ quỹ tín dụng bao gồm tính năng cho vay, tiết kiệm và chuyển tiền sử dụng React Native và Spring Boot.",
         image: "/projects/project-1.PNG",
         tech: ["React Native", "Spring Boot", "My SQL", "Redux"],
         year: "2025",
@@ -45,7 +45,7 @@ export const projects: Project[] = [
         description:
             "Xây dựng hệ thống quản lý cho vay toàn diện với dashboard theo dõi dữ liệu khách hàng, khoản vay và hiệu suất nhân viên.",
         image: "/projects/project-2.png",
-        tech: ["NextJs", "Spring Boot", "My SQL", "Material-UI"],
+        tech: ["NextJS", "Spring Boot", "My SQL", "Material-UI"],
         year: "2025",
         fullDescription:
             "Hệ thống quản lý dành cho quản trị viên và nhân viên, cung cấp công cụ phân tích dữ liệu cho vay, theo dõi khách hàng và đánh giá hiệu suất nhân viên. Dashboard trực quan hóa các chỉ số KPI quan trọng và tự động hóa quy trình phê duyệt khoản vay.",
@@ -60,5 +60,90 @@ export const projects: Project[] = [
             "Xử lý trên 5000 hồ sơ vay mỗi tháng",
         ],
         gallery: ["/projects/project-2.png"],
+    },
+    {
+        id: "project-3",
+        title: "Trống Đức Cacao - Website Bán Hàng",
+        description:
+            "Thiết kế và phát triển website thương mại điện tử, hệ thống truy xuất nguồn gốc và ứng dụng IoT cho doanh nghiệp chuyên sản xuất các sản phẩm cacao chất lượng cao.",
+        image: "/projects/project-3.png",
+        tech: [
+            "NextJS",
+            "Tailwind CSS",
+            "Node.js",
+            "MongoDB",
+            "IoT",
+            "QR Code",
+        ],
+        year: "2024",
+        fullDescription:
+            "Website thương mại điện tử dành cho Trống Đức Cacao kết hợp với hệ thống truy xuất nguồn gốc sản phẩm và ứng dụng IoT trong sản xuất. Dự án được phát triển cho công ty Cacao Trọng Đức với sự tài trợ từ Helvetas Việt Nam, nhằm nâng cao giá trị và minh bạch thông tin sản phẩm. Ngoài hệ thống bán hàng trực tuyến, dự án còn bao gồm các giải pháp kỹ thuật cao cho quy trình sản xuất và quản lý chất lượng.",
+        challenge:
+            "Xây dựng hệ thống đa chức năng kết hợp giữa thương mại điện tử và công nghệ truy xuất nguồn gốc, tích hợp dữ liệu IoT từ dây chuyền sản xuất, đảm bảo tính xác thực và minh bạch của thông tin sản phẩm từ vườn trồng đến tay người tiêu dùng.",
+        solution:
+            "Phát triển hệ thống truy xuất nguồn gốc sản phẩm thông qua QR Code, xây dựng ứng dụng Nhật ký Canh tác Thông minh với công nghệ IoT kết hợp Cisco Packet Tracer để theo dõi điều kiện trồng trọt, và thiết kế giải pháp tự động hóa cho dây chuyền sản xuất tại nhà máy Đồng Nai.",
+        results: [
+            "Tăng 65% tỷ lệ chuyển đổi khách hàng nhờ tính năng truy xuất nguồn gốc minh bạch",
+            "Giảm 40% thời gian tải trang và tối ưu trải nghiệm người dùng",
+            "Giảm 25% chi phí sản xuất nhờ tự động hóa dây chuyền",
+            "Cải thiện 35% chất lượng sản phẩm thông qua theo dõi và kiểm soát bằng IoT",
+            "Tăng 50% lượng đơn hàng trực tuyến",
+            "Mở rộng phạm vi khách hàng đến nhiều tỉnh thành trong nước",
+        ],
+        gallery: ["/projects/project-3.png"],
+    },
+    {
+        id: "project-4",
+        title: "Digifund Spice Store - Cửa Hàng Gia Vị",
+        description:
+            "Phát triển website giới thiệu và bán hàng trực tuyến cho cửa hàng gia vị với giao diện hiện đại, thân thiện người dùng.",
+        image: "/projects/project-4.png",
+        tech: ["React", "HTML", "CSS", "JavaScript", "Bootstrap", "Firebase"],
+        year: "2023",
+        fullDescription:
+            "Website dành cho cửa hàng gia vị với thiết kế tập trung vào việc hiển thị sản phẩm một cách hấp dẫn. Khách hàng có thể dễ dàng tìm kiếm, xem thông tin chi tiết và đặt hàng các loại gia vị trực tuyến. Hệ thống quản lý đơn hàng đơn giản, hiệu quả giúp chủ cửa hàng dễ dàng theo dõi và xử lý.",
+        challenge:
+            "Tạo giao diện trực quan giúp khách hàng dễ dàng tìm kiếm sản phẩm trong danh mục đa dạng, tối ưu hóa quy trình thanh toán để giảm tỷ lệ bỏ giỏ hàng.",
+        solution:
+            "Thiết kế hệ thống phân loại sản phẩm thông minh, xây dựng quy trình thanh toán đơn giản chỉ với 3 bước, và sử dụng Firebase để quản lý dữ liệu thời gian thực.",
+        results: [
+            "Đạt 2000+ lượt truy cập trong tháng đầu ra mắt",
+            "Tăng 30% doanh số bán hàng so với phương thức truyền thống",
+            "Mở rộng phạm vi kinh doanh ra toàn quốc",
+            "Xây dựng được cơ sở dữ liệu khách hàng với hơn 500 người đăng ký",
+        ],
+        gallery: ["/projects/project-4.png"],
+    },
+    {
+        id: "project-5",
+        title: "Mailinh Pay - Cổng Thanh Toán",
+        description:
+            "Xây dựng hệ thống ví điện tử và cổng thanh toán đa năng cho Mailinh Pay, tích hợp nhiều phương thức thanh toán, dịch vụ tài chính và tiện ích hàng ngày.",
+        image: "/projects/project-5.png",
+        tech: [
+            "React Native",
+            "Java Spring Boot",
+            "PostgreSQL",
+            "Redis",
+            "Microservices",
+            "Docker",
+            "Kubernetes",
+        ],
+        year: "2023",
+        fullDescription:
+            "Ứng dụng ví điện tử và cổng thanh toán toàn diện phát triển cho Mailinh Group, cho phép người dùng thực hiện đa dạng giao dịch tài chính từ chuyển tiền, thanh toán hóa đơn đến nạp tiền điện thoại và mua sắm online. Hệ thống được xây dựng trên nền tảng công nghệ hiện đại, đảm bảo tính bảo mật cao và trải nghiệm người dùng mượt mà.",
+        challenge:
+            "Xây dựng hệ thống có khả năng xử lý khối lượng giao dịch lớn, đảm bảo bảo mật thông tin nhạy cảm, tuân thủ các quy định về thanh toán điện tử của Ngân hàng Nhà nước, và tích hợp với nhiều nhà cung cấp dịch vụ khác nhau.",
+        solution:
+            "Triển khai kiến trúc microservices có khả năng mở rộng cao, sử dụng hệ thống xác thực hai lớp kết hợp với mã hóa đầu cuối, xây dựng hệ thống giám sát giao dịch thời gian thực và phát triển API trung gian để kết nối với các đối tác.",
+        results: [
+            "Xử lý hơn 200.000 giao dịch mỗi ngày với tỷ lệ thành công 99.8%",
+            "Đạt 500.000+ lượt tải về trên Google Play Store",
+            "Giảm 60% thời gian xử lý giao dịch so với phương thức truyền thống",
+            "Tích hợp thành công với hơn 50 nhà cung cấp dịch vụ thanh toán",
+            "Đạt chứng nhận bảo mật PCI DSS cho hệ thống thanh toán",
+            "Tăng trưởng người dùng 40% mỗi quý từ khi ra mắt",
+        ],
+        gallery: ["/projects/project-5.jpg", "/projects/project-5-1.png"],
     },
 ];
