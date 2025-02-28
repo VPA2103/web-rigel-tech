@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function AboutPage() {
     return (
         <main className="pt-28 pb-20">
@@ -8,11 +10,11 @@ export default function AboutPage() {
                         Về chúng tôi
                     </h1>
                     <p className="text-lg mb-6">
-                        DIGIFUND là startup
-                        công nghệ trẻ với khát vọng trở thành đơn vị tiên phong
-                        trong lĩnh vực phát triển phần mềm và chuyển đổi số tại
-                        Việt Nam. Chúng tôi tự hào đón đầu xu hướng công nghệ
-                        mới và đột phá trong việc phát triển giải pháp số.
+                        DIGIFUND là startup công nghệ trẻ với khát vọng trở
+                        thành đơn vị tiên phong trong lĩnh vực phát triển phần
+                        mềm và chuyển đổi số tại Việt Nam. Chúng tôi tự hào đón
+                        đầu xu hướng công nghệ mới và đột phá trong việc phát
+                        triển giải pháp số.
                     </p>
                 </section>
 
@@ -115,9 +117,12 @@ export default function AboutPage() {
                         nghiệp
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <button className="bg-primary-600 text-white px-8 py-4 rounded-full hover:bg-primary-700 transition-colors text-lg font-semibold min-w-[200px]">
+                        <Link
+                            href="/contact"
+                            className="bg-primary-600 text-white px-8 py-4 rounded-full hover:bg-primary-700 transition-colors text-lg font-semibold min-w-[200px] inline-block"
+                        >
                             Liên hệ tư vấn
-                        </button>
+                        </Link>
                         {/* <button className="border-2 border-primary-600 text-primary-600 px-8 py-4 rounded-full hover:bg-primary-50 transition-colors text-lg font-semibold min-w-[200px]">
                             Xem portfolio
                         </button> */}
