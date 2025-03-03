@@ -57,7 +57,7 @@ export default function ContactPage() {
                                                 Điện thoại
                                             </h4>
                                             <p className="text-gray-500">
-                                                (84-28) 1234 5678
+                                                0938.065.499
                                             </p>
                                         </div>
                                     </div>
@@ -68,7 +68,7 @@ export default function ContactPage() {
                                                 Email
                                             </h4>
                                             <p className="text-gray-500">
-                                                contact@digifund.vn
+                                                info@digifund.tech
                                             </p>
                                         </div>
                                     </div>

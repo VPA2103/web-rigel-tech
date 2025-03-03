@@ -1,10 +1,10 @@
 import { FIELDS, SERVICES } from "@/constants/data";
-import BannerSlider from "@/components/BannerSlider";
-import ClientsScroll from "@/components/ClientsScroll";
-import AboutSection from "@/components/AboutSection";
-import NewsSection from "@/components/NewsSection";
-import FieldsSection from "@/components/FieldsSection";
-import ServicesSection from "@/components/ServicesSection";
+import BannerSlider from "@/components/home/BannerSlider";
+import ClientsScroll from "@/components/home/ClientsScroll";
+import AboutSection from "@/components/home/AboutSection";
+import NewsSection from "@/components/home/NewsSection";
+import FieldsSection from "@/components/home/FieldsSection";
+import ServicesSection from "@/components/home/ServicesSection";
 
 export default function Home() {
     return (

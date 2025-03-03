@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { serviceLinks, companyLinks } from "../constants/footerLinks";
+import { serviceLinks, companyLinks } from "../../constants/footerLinks";
 
 export default function Footer() {
     return (
@@ -120,7 +120,11 @@ export default function Footer() {
                                 <span className="w-5 mr-2 md:mr-3 flex-shrink-0 mt-0.5">
                                     📍
                                 </span>
-                                <span
+                                <a
+                                    href="https://maps.google.com/?q=156+Nam+Kỳ+Khởi+Nghĩa+Phường+Bến+Nghé+Quận+1+Thành+phố+Hồ+Chí+Minh"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-primary-400 transition-colors duration-300"
                                     itemProp="address"
                                     itemScope
                                     itemType="https://schema.org/PostalAddress"
@@ -138,27 +142,43 @@ export default function Footer() {
                                     <span itemProp="addressCountry">
                                         Thành phố Hồ Chí Minh, Việt Nam
                                     </span>
-                                </span>
+                                </a>
                             </p>
                             <p className="flex items-center text-sm md:text-base text-gray-400">
                                 <span className="w-5 mr-2 md:mr-3 flex-shrink-0">
                                     📞
                                 </span>
-                                <span itemProp="telephone">0287.3033268</span>
+                                <a
+                                    href="tel:0287.3033268"
+                                    className="hover:text-primary-400 transition-colors duration-300"
+                                    itemProp="telephone"
+                                >
+                                    0287.3033268
+                                </a>
                             </p>
                             <p className="flex items-center text-sm md:text-base text-gray-400">
                                 <span className="w-5 mr-2 md:mr-3 flex-shrink-0">
                                     📱
                                 </span>
-                                <span itemProp="telephone">
+                                <a
+                                    href="tel:0938065499"
+                                    className="hover:text-primary-400 transition-colors duration-300"
+                                    itemProp="telephone"
+                                >
                                     Hotline: 0938.065.499
-                                </span>
+                                </a>
                             </p>
                             <p className="flex items-center text-sm md:text-base text-gray-400">
                                 <span className="w-5 mr-2 md:mr-3 flex-shrink-0">
                                     ✉️
                                 </span>
-                                <span itemProp="email">info@digifund.tech</span>
+                                <a
+                                    href="mailto:info@digifund.tech"
+                                    className="hover:text-primary-400 transition-colors duration-300"
+                                    itemProp="email"
+                                >
+                                    info@digifund.tech
+                                </a>
                             </p>
                         </div>
                     </div>
@@ -176,13 +196,13 @@ export default function Footer() {
                         </p>
                         <div className="flex space-x-4 md:space-x-6">
                             <Link
-                                href="#"
+                                href="/terms-of-use"
                                 className="text-xs md:text-sm text-gray-400 hover:text-primary-400"
                             >
                                 Điều khoản sử dụng
                             </Link>
                             <Link
-                                href="#"
+                                href="/privacy-policy"
                                 className="text-xs md:text-sm text-gray-400 hover:text-primary-400"
                             >
                                 Chính sách bảo mật

@@ -73,3 +73,28 @@ body {
 .text-shadow-sm {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 }
+
+/* Ensure text with primary color has good contrast */
+.text-primary-600,
+a.text-primary-600,
+.hover\:text-primary-400:hover {
+  @apply text-primary-500;
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure links stand out properly */
+a.text-primary-600:hover {
+  @apply text-primary-700;
+}
+
+/* Ensure headings stand out against the header */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+  z-index: 1;
+}
