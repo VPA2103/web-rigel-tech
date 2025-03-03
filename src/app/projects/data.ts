@@ -63,7 +63,7 @@ export const projects: Project[] = [
     },
     {
         id: "project-3",
-        title: "Trống Đức Cacao - Website Bán Hàng",
+        title: "Trọng Đức Cacao - Website Bán Hàng",
         description:
             "Thiết kế và phát triển website thương mại điện tử, hệ thống truy xuất nguồn gốc và ứng dụng IoT cho doanh nghiệp chuyên sản xuất các sản phẩm cacao chất lượng cao.",
         image: "/projects/project-3.png",
@@ -77,7 +77,7 @@ export const projects: Project[] = [
         ],
         year: "2024",
         fullDescription:
-            "Website thương mại điện tử dành cho Trống Đức Cacao kết hợp với hệ thống truy xuất nguồn gốc sản phẩm và ứng dụng IoT trong sản xuất. Dự án được phát triển cho công ty Cacao Trọng Đức với sự tài trợ từ Helvetas Việt Nam, nhằm nâng cao giá trị và minh bạch thông tin sản phẩm. Ngoài hệ thống bán hàng trực tuyến, dự án còn bao gồm các giải pháp kỹ thuật cao cho quy trình sản xuất và quản lý chất lượng.",
+            "Website thương mại điện tử dành cho Trọng Đức Cacao kết hợp với hệ thống truy xuất nguồn gốc sản phẩm và ứng dụng IoT trong sản xuất. Dự án được phát triển cho công ty Cacao Trọng Đức với sự tài trợ từ Helvetas Việt Nam, nhằm nâng cao giá trị và minh bạch thông tin sản phẩm. Ngoài hệ thống bán hàng trực tuyến, dự án còn bao gồm các giải pháp kỹ thuật cao cho quy trình sản xuất và quản lý chất lượng.",
         challenge:
             "Xây dựng hệ thống đa chức năng kết hợp giữa thương mại điện tử và công nghệ truy xuất nguồn gốc, tích hợp dữ liệu IoT từ dây chuyền sản xuất, đảm bảo tính xác thực và minh bạch của thông tin sản phẩm từ vườn trồng đến tay người tiêu dùng.",
         solution:
