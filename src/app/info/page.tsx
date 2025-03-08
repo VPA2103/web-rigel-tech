@@ -101,10 +101,10 @@ export default function InfoPage() {
                                         ✉️
                                     </span>
                                     <a
-                                        href="mailto:info@digifund.tech"
+                                        href="mailto:truong.huynh@digifund.tech"
                                         className="hover:text-primary-600 transition-colors"
                                     >
-                                        info@digifund.tech
+                                        truong.huynh@digifund.tech
                                     </a>
                                 </div>
                                 <div className="flex items-center text-sm text-gray-700">
@@ -224,10 +224,10 @@ export default function InfoPage() {
                                         ✉️
                                     </span>
                                     <a
-                                        href="mailto:info@digifund.tech"
+                                        href="mailto:truong.huynh@digifund.tech"
                                         className="hover:text-primary-600 transition-colors"
                                     >
-                                        info@digifund.tech
+                                        truong.huynh@digifund.tech
                                     </a>
                                 </div>
                                 <div className="flex items-center text-sm text-gray-700">
