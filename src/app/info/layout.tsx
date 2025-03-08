@@ -1,9 +1,15 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
     title: "Thông tin liên hệ | DIGIFUND",
     description:
         "Thông tin liên hệ của DIGIFUND - Công ty Cổ phần Công nghệ DIGIFUND",
+};
+
+export const viewport: Viewport = {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
 };
 
 export default function InfoLayout({

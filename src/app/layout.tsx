@@ -41,6 +41,7 @@ export const metadata: Metadata = {
         icon: "/logo-nobackground.png",
         apple: "/apple-icon.png",
     },
+    metadataBase: new URL("https://digifund.tech"),
 };
 
 export default function RootLayout({

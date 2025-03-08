@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { serviceLinks, companyLinks } from "../../constants/footerLinks";
+import { FaMapMarkerAlt } from "react-icons/fa"; // Add this import
 
 export default function Footer() {
     return (
@@ -22,7 +23,7 @@ export default function Footer() {
                                         width={80}
                                         height={80}
                                     />
-                                    <span className="text-2xl md:text-3xl font-bold text-[#ffbd59] mt-1">
+                                    <span className="text-2xl md:text-3xl font-bold text-[#ffbd59] -mt-1">
                                         DIGIFUND
                                     </span>
                                 </div>
@@ -118,7 +119,7 @@ export default function Footer() {
                         <div className="space-y-2 md:space-y-3">
                             <p className="flex items-start text-sm md:text-base text-gray-400">
                                 <span className="w-5 mr-2 md:mr-3 flex-shrink-0 mt-0.5">
-                                    📍
+                                    <FaMapMarkerAlt className="w-4 h-4" />
                                 </span>
                                 <a
                                     href="https://maps.google.com/?q=156+Nam+Kỳ+Khởi+Nghĩa+Phường+Bến+Nghé+Quận+1+Thành+phố+Hồ+Chí+Minh"
@@ -132,13 +133,13 @@ export default function Footer() {
                                     <span itemProp="streetAddress">
                                         Số 156 Đường Nam Kỳ Khởi Nghĩa
                                     </span>
-                                    ,
+                                    , {/* Added space */}
                                     <span itemProp="addressLocality">
                                         Phường Bến Nghé
                                     </span>
-                                    ,
+                                    , {/* Added space */}
                                     <span itemProp="addressRegion">Quận 1</span>
-                                    ,
+                                    , {/* Added space */}
                                     <span itemProp="addressCountry">
                                         Thành phố Hồ Chí Minh, Việt Nam
                                     </span>

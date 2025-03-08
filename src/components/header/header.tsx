@@ -26,7 +26,7 @@ export default function Header() {
                         height={50}
                         className="object-contain"
                     />
-                    <span className="text-2xl font-bold text-[#ffbd59]">
+                    <span className="text-2xl font-bold text-[#ffbd59] -mt-3">
                         DIGIFUND
                     </span>
                 </Link>
