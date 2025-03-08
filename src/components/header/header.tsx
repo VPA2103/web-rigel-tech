@@ -16,17 +16,17 @@ export default function Header() {
             <div className="container mx-auto px-4 h-20 flex items-center justify-between">
                 <Link
                     href="/"
-                    className="flex items-center gap-2"
+                    className="flex flex-col items-center gap-1"
                     onClick={handleNavigate}
                 >
                     <Image
                         src="/logo-nobackground.png"
                         alt="DIGIFUND Logo"
-                        width={40}
-                        height={40}
+                        width={50}
+                        height={50}
                         className="object-contain"
                     />
-                    <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-800">
+                    <span className="text-2xl font-bold text-[#ffbd59]">
                         DIGIFUND
                     </span>
                 </Link>

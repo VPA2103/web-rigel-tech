@@ -15,19 +15,19 @@ export default function Footer() {
                     <div className="sm:col-span-2 md:col-span-3 lg:col-span-4 space-y-4 md:space-y-6">
                         <div className="space-y-2">
                             <Link href="/" className="inline-block">
-                                <div className="flex items-center gap-3">
+                                <div className="flex flex-col items-center">
                                     <Image
                                         src="/logo-nobackground.png"
                                         alt="DIGIFUND Logo"
-                                        width={40}
-                                        height={40}
+                                        width={80}
+                                        height={80}
                                     />
-                                    <span className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary-400 to-primary-600">
+                                    <span className="text-2xl md:text-3xl font-bold text-[#ffbd59] mt-1">
                                         DIGIFUND
                                     </span>
                                 </div>
                             </Link>
-                            <div>
+                            <div className="text-left">
                                 <span className="text-xs md:text-sm text-gray-400">
                                     CÔNG TY CỔ PHẦN CÔNG NGHỆ DIGIFUND
                                 </span>
@@ -153,7 +153,7 @@ export default function Footer() {
                                     className="hover:text-primary-400 transition-colors duration-300"
                                     itemProp="telephone"
                                 >
-                                    0287.3033268
+                                    02873.033.268
                                 </a>
                             </p>
                             <p className="flex items-center text-sm md:text-base text-gray-400">
