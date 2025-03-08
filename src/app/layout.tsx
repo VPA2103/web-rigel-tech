@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header/header";
-import Footer from "@/components/footer/footer";
+import ClientLayout from "@/components/layout/ClientLayout";
 
 const roboto = Roboto({
     weight: ["400", "500", "700", "900"],
@@ -62,28 +61,7 @@ export default function RootLayout({
                 />
             </head>
             <body className={`${roboto.className} antialiased`}>
-                <Header />
-                {children}
-                <Footer />
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify({
-                            "@context": "https://schema.org",
-                            "@type": "Organization",
-                            name: "DIGIFUND",
-                            url: "https://digifund.com.vn",
-                            logo: "https://digifund.com.vn/logo-nobackground.png",
-                            description:
-                                "DIGIFUND - Đối tác tin cậy trong hành trình chuyển đổi số của doanh nghiệp.",
-                            sameAs: [
-                                "https://facebook.com/DIGIFUND",
-                                "https://twitter.com/DIGIFUND",
-                                "https://linkedin.com/company/DIGIFUND",
-                            ],
-                        }),
-                    }}
-                />
+                <ClientLayout>{children}</ClientLayout>
             </body>
         </html>
     );
