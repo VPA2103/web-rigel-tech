@@ -215,8 +215,8 @@ function BusinessCardClient() {
                                 rel="noopener noreferrer"
                                 className="hover:text-primary-600 transition-colors"
                             >
-                                156 Nam Kỳ Khởi Nghĩa, P. Bến Nghé, Quận 1, TP.
-                                HCM
+                                Số 156 Đường Nam Kỳ Khởi Nghĩa, Phường Bến Nghé,
+                                Quận 1, Thành phố Hồ Chí Minh
                             </a>
                         </div>
                         <div className="flex items-center text-sm text-gray-700">
@@ -345,8 +345,8 @@ function BusinessCardClient() {
                                 rel="noopener noreferrer"
                                 className="hover:text-primary-600 transition-colors"
                             >
-                                156 Nam Ky Khoi Nghia St., Ben Nghe Ward,
-                                District 1, HCMC
+                                156 Nam Ky Khoi Nghia Street, Ben Nghe Ward,
+                                District 1, Ho Chi Minh City
                             </a>
                         </div>
                         <div className="flex items-center text-sm text-gray-700">
