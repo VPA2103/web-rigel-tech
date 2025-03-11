@@ -62,8 +62,8 @@ const teamMembers: TeamMember[] = [
             en: "Thieu Quang Thien",
         },
         position: {
-            vi: "Cố Vấn Tài Chính - Đồng Sáng Lập",
-            en: "Financial Advisor - Co-Founder",
+            vi: "Cố Vấn Tài Chính & Đồng Sáng Lập",
+            en: "Financial Advisor & Co-Founder",
         },
         mobile: "0909671618",
         email: "thien.thieu@digifund.tech",
