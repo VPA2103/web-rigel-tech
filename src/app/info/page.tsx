@@ -47,8 +47,8 @@ const teamMembers: TeamMember[] = [
             en: "Huynh Nhut Truong",
         },
         position: {
-            vi: "CEO & Founder",
-            en: "CEO & Founder",
+            vi: "Giám Đốc Điều Hành - Nhà Sáng Lập",
+            en: "CEO - Founder",
         },
         phone: "02873033268",
         mobile: "0938065499",
@@ -62,8 +62,8 @@ const teamMembers: TeamMember[] = [
             en: "Thieu Quang Thien",
         },
         position: {
-            vi: "Cố Vấn Tài Chính & Co-Founder",
-            en: "Financial Advisor & Co-Founder",
+            vi: "Cố Vấn Tài Chính - Đồng Sáng Lập",
+            en: "Financial Advisor - Co-Founder",
         },
         mobile: "0909671618",
         email: "thien.thieu@digifund.tech",
@@ -166,7 +166,7 @@ function BusinessCardClient() {
 
                     {/* Header - Director name on LEFT */}
                     <div className="mb-8 mt-2">
-                        <div className="max-w-[60%]">
+                        <div className="max-w-[70%]">
                             <h2 className="text-xl font-bold text-gray-800 whitespace-nowrap">
                                 {member.name.vi}
                             </h2>
@@ -288,7 +288,7 @@ function BusinessCardClient() {
 
                     {/* Header - Director name on LEFT */}
                     <div className="mb-8 mt-2">
-                        <div className="max-w-[60%]">
+                        <div className="max-w-[70%]">
                             <h2 className="text-xl font-bold text-gray-800 whitespace-nowrap">
                                 {member.name.en}
                             </h2>
