@@ -7,6 +7,20 @@ import { FaMapMarkerAlt } from "react-icons/fa"; // Add this import
 
 // Remove viewport export since it's now in layout.tsx
 
+const formatPhoneNumber = (phone: string, isEnglish: boolean) => {
+    if (!phone) return "";
+
+    if (isEnglish) {
+        // Convert 0xxxxxxxxx to +84 xxx xxx xxx
+        return (
+            "+84 " +
+            phone.substring(1).replace(/(\d{3})(\d{3})(\d{3})/, "$1 $2 $3")
+        );
+    }
+    // Vietnamese format 0xxx.xxx.xxx
+    return phone.replace(/(\d{4})(\d{3})(\d{3})/, "$1.$2.$3");
+};
+
 // Define a type for our team member data
 type TeamMember = {
     id: string;
@@ -48,8 +62,8 @@ const teamMembers: TeamMember[] = [
             en: "Thieu Quang Thien",
         },
         position: {
-            vi: "Cố Vấn Tài Chính",
-            en: "Financial Advisor",
+            vi: "Cố Vấn Tài Chính & Co-Founder",
+            en: "Financial Advisor & Co-Founder",
         },
         mobile: "0909671618",
         email: "thien.thieu@digifund.tech",
@@ -156,7 +170,7 @@ function BusinessCardClient() {
                             <h2 className="text-xl font-bold text-gray-800 whitespace-nowrap">
                                 {member.name.vi}
                             </h2>
-                            <p className="text-sm text-primary-600 font-medium">
+                            <p className="text-[12px] sm:text-[14px] text-primary-600 font-medium">
                                 {member.position.vi}
                             </p>
                         </div>
@@ -184,10 +198,7 @@ function BusinessCardClient() {
                                     href={`tel:${member.phone}`}
                                     className="hover:text-primary-600 transition-colors"
                                 >
-                                    {member.phone.replace(
-                                        /(\d{5})(\d{3})(\d{3})/,
-                                        "$1.$2.$3",
-                                    )}
+                                    {formatPhoneNumber(member.phone, false)}
                                 </a>
                             </div>
                         )}
@@ -199,15 +210,12 @@ function BusinessCardClient() {
                                 href={`tel:${member.mobile}`}
                                 className="hover:text-primary-600 transition-colors"
                             >
-                                {member.mobile.replace(
-                                    /(\d{4})(\d{3})(\d{3})/,
-                                    "$1.$2.$3",
-                                )}
+                                {formatPhoneNumber(member.mobile, false)}
                             </a>
                         </div>
-                        <div className="flex items-center text-sm text-gray-700">
-                            <span className="text-primary-600 mr-3 w-6 flex items-center justify-center">
-                                <FaMapMarkerAlt className="w-4 h-4" />
+                        <div className="flex items-start text-sm text-gray-700">
+                            <span className="text-primary-600 mr-3 w-6 text-center">
+                                <FaMapMarkerAlt className="w-6 h-5 mx-auto" />
                             </span>
                             <a
                                 href="https://maps.app.goo.gl/2sGGhNsj73ecWaaU7"
@@ -284,7 +292,7 @@ function BusinessCardClient() {
                             <h2 className="text-xl font-bold text-gray-800 whitespace-nowrap">
                                 {member.name.en}
                             </h2>
-                            <p className="text-sm text-primary-600 font-medium">
+                            <p className="text-[12px] sm:text-[14px] text-primary-600 font-medium">
                                 {member.position.en}
                             </p>
                         </div>
@@ -314,10 +322,7 @@ function BusinessCardClient() {
                                     href={`tel:${member.phone}`}
                                     className="hover:text-primary-600 transition-colors"
                                 >
-                                    {member.phone.replace(
-                                        /(\d{5})(\d{3})(\d{3})/,
-                                        "$1.$2.$3",
-                                    )}
+                                    {formatPhoneNumber(member.phone, true)}
                                 </a>
                             </div>
                         )}
@@ -329,15 +334,12 @@ function BusinessCardClient() {
                                 href={`tel:${member.mobile}`}
                                 className="hover:text-primary-600 transition-colors"
                             >
-                                {member.mobile.replace(
-                                    /(\d{4})(\d{3})(\d{3})/,
-                                    "$1.$2.$3",
-                                )}
+                                {formatPhoneNumber(member.mobile, true)}
                             </a>
                         </div>
-                        <div className="flex items-center text-sm text-gray-700">
-                            <span className="text-primary-600 mr-3 w-6 flex items-center justify-center">
-                                <FaMapMarkerAlt className="w-4 h-4" />
+                        <div className="flex items-start text-sm text-gray-700">
+                            <span className="text-primary-600 mr-3 w-6 text-center">
+                                <FaMapMarkerAlt className="w-6 h-5 mx-auto" />
                             </span>
                             <a
                                 href="https://maps.app.goo.gl/2sGGhNsj73ecWaaU7"
