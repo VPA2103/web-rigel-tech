@@ -10,38 +10,38 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-    title: "DIGIFUND - Công nghệ tài chính số | Giải pháp Fintech hàng đầu",
+  title: "Rigel Tech - Công nghệ tài chính số | Giải pháp Fintech hàng đầu",
+  description:
+    "Rigel Tech - Đối tác tin cậy trong hành trình chuyển đổi số của doanh nghiệp. Cung cấp giải pháp tài chính số, blockchain và AI tiên tiến.",
+  keywords:
+    "Rigel Tech, fintech, blockchain, AI, digital transformation, financial technology, công nghệ tài chính, chuyển đổi số, tài chính số",
+  authors: [{ name: "Rigel Tech", url: "https://digifund.com.vn" }],
+  viewport: "width=device-width, initial-scale=1",
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://digifund.com.vn",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://digifund.com.vn",
+    title: "Rigel Tech - Công nghệ tài chính số | Giải pháp Fintech hàng đầu",
     description:
-        "DIGIFUND - Đối tác tin cậy trong hành trình chuyển đổi số của doanh nghiệp. Cung cấp giải pháp tài chính số, blockchain và AI tiên tiến.",
-    keywords:
-        "DIGIFUND, fintech, blockchain, AI, digital transformation, financial technology, công nghệ tài chính, chuyển đổi số, tài chính số",
-    authors: [{ name: "DIGIFUND", url: "https://digifund.com.vn" }],
-    viewport: "width=device-width, initial-scale=1",
-    robots: "index, follow",
-    alternates: {
-        canonical: "https://digifund.com.vn",
-    },
-    openGraph: {
-        type: "website",
-        url: "https://digifund.com.vn",
-        title: "DIGIFUND - Công nghệ tài chính số | Giải pháp Fintech hàng đầu",
-        description:
-            "DIGIFUND - Đối tác tin cậy trong hành trình chuyển đổi số của doanh nghiệp",
-        siteName: "DIGIFUND",
-        images: [{ url: "/images/og-image.jpg" }],
-    },
-    twitter: {
-        card: "summary_large_image",
-        site: "@DIGIFUND",
-        title: "DIGIFUND - Công nghệ tài chính số | Giải pháp Fintech hàng đầu",
-        description: "Giải pháp tài chính số và chuyển đổi số cho doanh nghiệp",
-        images: [{ url: "/images/twitter-image.jpg" }],
-    },
-    icons: {
-        icon: "/logo-nobackground.png",
-        apple: "/apple-icon.png",
-    },
-    metadataBase: new URL("https://digifund.tech"),
+      "Rigel Tech - Đối tác tin cậy trong hành trình chuyển đổi số của doanh nghiệp",
+    siteName: "Rigel Tech",
+    images: [{ url: "/images/og-image.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@Rigel Tech",
+    title: "Rigel Tech - Công nghệ tài chính số | Giải pháp Fintech hàng đầu",
+    description: "Giải pháp tài chính số và chuyển đổi số cho doanh nghiệp",
+    images: [{ url: "/images/twitter-image.jpg" }],
+  },
+  icons: {
+    icon: "/logo-nobackground.png",
+    apple: "/apple-icon.png",
+  },
+  metadataBase: new URL("https://digifund.tech"),
 };
 
 export default function RootLayout({

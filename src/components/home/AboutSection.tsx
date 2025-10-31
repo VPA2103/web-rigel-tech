@@ -5,7 +5,7 @@ export default function AboutSection() {
         <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50">
             <div className="container mx-auto px-4">
                 <h2 className="text-4xl font-bold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-800">
-                    Về DIGIFUND
+                    Về Rigel Tech
                 </h2>
                 <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
                     Đối tác công nghệ trẻ, năng động trong phát triển giải pháp
@@ -18,7 +18,7 @@ export default function AboutSection() {
                                 Sáng tạo & Chuyên môn
                             </h3>
                             <p className="text-lg leading-relaxed text-gray-800">
-                                DIGIFUND là startup công nghệ, với đội ngũ kỹ sư phần mềm giàu nhiệt
+                                Rigel Tech là startup công nghệ, với đội ngũ kỹ sư phần mềm giàu nhiệt
                                 huyết và sáng tạo. Chúng tôi chuyên phát triển
                                 các giải pháp web hiện đại và ứng dụng di động
                                 thông minh, giúp doanh nghiệp bắt kịp xu hướng

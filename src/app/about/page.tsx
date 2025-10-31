@@ -10,7 +10,7 @@ export default function AboutPage() {
                         Về chúng tôi
                     </h1>
                     <p className="text-lg mb-6">
-                        DIGIFUND là startup công nghệ trẻ với khát vọng trở
+                        Rigel Tech là startup công nghệ trẻ với khát vọng trở
                         thành đơn vị tiên phong trong lĩnh vực phát triển phần
                         mềm và chuyển đổi số tại Việt Nam. Chúng tôi tự hào đón
                         đầu xu hướng công nghệ mới và đột phá trong việc phát
@@ -25,7 +25,7 @@ export default function AboutPage() {
                             Tầm nhìn
                         </h2>
                         <p className="text-gray-700 leading-relaxed">
-                            DIGIFUND sẽ trở thành công ty công nghệ phần mềm và
+                            Rigel Tech sẽ trở thành công ty công nghệ phần mềm và
                             chuyển đổi số hàng đầu tại Việt Nam. Luôn tiên phong
                             nghiên cứu sáng tạo để cung cấp các sản phẩm và giải
                             pháp dịch vụ có giá trị đạt chất lượng cao nhằm đáp
@@ -112,7 +112,7 @@ export default function AboutPage() {
                         Sẵn sàng bắt đầu dự án của bạn?
                     </h2>
                     <p className="mb-8 text-lg text-gray-700 max-w-2xl mx-auto">
-                        Hãy để DIGIFUND đồng hành cùng bạn trong việc xây dựng
+                        Hãy để Rigel Tech đồng hành cùng bạn trong việc xây dựng
                         giải pháp công nghệ hiện đại và phù hợp nhất cho doanh
                         nghiệp
                     </p>
