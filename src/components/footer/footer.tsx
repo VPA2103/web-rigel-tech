@@ -142,7 +142,7 @@ export default function Footer() {
                   </span>
                 </a>
               </p>
-              <p className="flex items-center text-sm md:text-base text-gray-400">
+              {/* <p className="flex items-center text-sm md:text-base text-gray-400">
                 <span className="w-5 mr-2 md:mr-3 flex-shrink-0">📞</span>
                 <a
                   href="tel:0287.3033268"
@@ -151,7 +151,7 @@ export default function Footer() {
                 >
                   02873.033.268
                 </a>
-              </p>
+              </p> */}
               <p className="flex items-center text-sm md:text-base text-gray-400">
                 <span className="w-5 mr-2 md:mr-3 flex-shrink-0">📱</span>
                 <a
