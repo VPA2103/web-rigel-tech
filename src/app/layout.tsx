@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import ClientLayout from "@/components/layout/ClientLayout";
@@ -9,6 +9,11 @@ const roboto = Roboto({
     display: "swap",
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
   title: "Rigel Tech - Công nghệ tài chính số | Giải pháp Fintech hàng đầu",
   description:
@@ -16,7 +21,6 @@ export const metadata: Metadata = {
   keywords:
     "Rigel Tech, fintech, blockchain, AI, digital transformation, financial technology, công nghệ tài chính, chuyển đổi số, tài chính số",
   authors: [{ name: "Rigel Tech", url: "https://digifund.com.vn" }],
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   alternates: {
     canonical: "https://digifund.com.vn",
