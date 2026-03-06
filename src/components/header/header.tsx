@@ -22,14 +22,14 @@ export default function Header() {
           <Image
             src="/logo.png"
             alt="DIGIFUND Logo"
-            width={50}
+            width={70}
             height={50}
             className="object-contain"
           />
-          <span className="text-2xl font-bold text-[#866129]">
+          <span className="text-xl font-bold text-[#866129]">
             RIGEL TECH
           </span>
-          <span className="text-2xl font-bold text-[#866129]">
+          <span className="text-xs font-bold text-[#866129]">
             Kiến tạo giá trị từ công nghệ
           </span>
         </Link>
