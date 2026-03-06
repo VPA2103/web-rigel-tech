@@ -130,28 +130,19 @@ export default function Footer() {
                   itemType="https://schema.org/PostalAddress"
                 >
                   <span itemProp="streetAddress">
-                    Số 156 Đường Nam Kỳ Khởi Nghĩa
+                    Số 282 đường 13
                   </span>
                   , {/* Added space */}
-                  <span itemProp="addressLocality">Phường Bến Nghé</span>,{" "}
+                  <span itemProp="addressLocality">Phường Phước Bình</span>,{" "}
                   {/* Added space */}
-                  <span itemProp="addressRegion">Quận 1</span>,{" "}
+                  <span itemProp="addressRegion">Quận 9</span>,{" "}
                   {/* Added space */}
                   <span itemProp="addressCountry">
                     Thành phố Hồ Chí Minh, Việt Nam
                   </span>
                 </a>
               </p>
-              {/* <p className="flex items-center text-sm md:text-base text-gray-400">
-                <span className="w-5 mr-2 md:mr-3 flex-shrink-0">📞</span>
-                <a
-                  href="tel:0287.3033268"
-                  className="hover:text-primary-400 transition-colors duration-300"
-                  itemProp="telephone"
-                >
-                  02873.033.268
-                </a>
-              </p> */}
+              
               <p className="flex items-center text-sm md:text-base text-gray-400">
                 <span className="w-5 mr-2 md:mr-3 flex-shrink-0">📱</span>
                 <a
