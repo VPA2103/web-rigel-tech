@@ -208,7 +208,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p className="text-xs md:text-sm text-gray-400 text-center sm:text-left">
               &copy; {2014}{" "}
-              <span itemProp="name">RIGELTECH</span>. Co., Ltd. All Rights Reserved.
+              <span itemProp="name">RIGELTECH</span> Co., Ltd. All Rights Reserved.
             </p>
             <div className="flex space-x-4 md:space-x-6">
               <Link
