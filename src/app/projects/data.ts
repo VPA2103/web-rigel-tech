@@ -146,4 +146,36 @@ export const projects: Project[] = [
         ],
         gallery: ["/projects/project-5.jpg", "/projects/project-5-1.png"],
     },
+    {
+        id: "project-5",
+        title: "Phát triển phần mềm tích hợp và đào tạo AI, Blockchain",
+        description:
+            "Cung cấp giải pháp phát triển phần mềm tích hợp, hỗ trợ ứng dụng AI và Blockchain. Chúng tôi đồng thời đào tạo và chuyển giao công nghệ, giúp doanh nghiệp triển khai hiệu quả các hệ thống thông minh, bảo mật và dễ mở rộng.",
+        image: "/projects/project-5.png",
+        tech: [
+            "React Native",
+            "Java Spring Boot",
+            "PostgreSQL",
+            "Redis",
+            "Microservices",
+            "Docker",
+            "Kubernetes",
+        ],
+        year: "2023",
+        fullDescription:
+            "Ứng dụng ví điện tử và cổng thanh toán toàn diện phát triển cho Mailinh Group, cho phép người dùng thực hiện đa dạng giao dịch tài chính từ chuyển tiền, thanh toán hóa đơn đến nạp tiền điện thoại và mua sắm online. Hệ thống được xây dựng trên nền tảng công nghệ hiện đại, đảm bảo tính bảo mật cao và trải nghiệm người dùng mượt mà.",
+        challenge:
+            "Xây dựng hệ thống có khả năng xử lý khối lượng giao dịch lớn, đảm bảo bảo mật thông tin nhạy cảm, tuân thủ các quy định về thanh toán điện tử của Ngân hàng Nhà nước, và tích hợp với nhiều nhà cung cấp dịch vụ khác nhau.",
+        solution:
+            "Triển khai kiến trúc microservices có khả năng mở rộng cao, sử dụng hệ thống xác thực hai lớp kết hợp với mã hóa đầu cuối, xây dựng hệ thống giám sát giao dịch thời gian thực và phát triển API trung gian để kết nối với các đối tác.",
+        results: [
+            "Xử lý hơn 200.000 giao dịch mỗi ngày với tỷ lệ thành công 99.8%",
+            "Đạt 500.000+ lượt tải về trên Google Play Store",
+            "Giảm 60% thời gian xử lý giao dịch so với phương thức truyền thống",
+            "Tích hợp thành công với hơn 50 nhà cung cấp dịch vụ thanh toán",
+            "Đạt chứng nhận bảo mật PCI DSS cho hệ thống thanh toán",
+            "Tăng trưởng người dùng 40% mỗi quý từ khi ra mắt",
+        ],
+        gallery: ["/projects/project-5.jpg", "/projects/project-5-1.png"],
+    },
 ];

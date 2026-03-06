@@ -75,6 +75,19 @@ export const FIELDS = [
       "Connected Devices",
     ],
   },
+  {
+    id: 8,
+    icon: "/icons/ring.png",
+    title: "Phát triển phần mềm tích hợp và đào tạo AI, Blockchain",
+    description:
+      "Cung cấp giải pháp phát triển phần mềm tích hợp, hỗ trợ ứng dụng AI và Blockchain. Chúng tôi đồng thời đào tạo và chuyển giao công nghệ, giúp doanh nghiệp triển khai hiệu quả các hệ thống thông minh, bảo mật và dễ mở rộng.",
+    features: [
+      "Smart Home/Office",
+      "Industrial IoT",
+      "IoT Gateways",
+      "Connected Devices",
+    ],
+  },
 ];
 
 export const NEWS = [

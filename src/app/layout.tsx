@@ -15,12 +15,12 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Rigel Tech - Công nghệ tài chính số | Giải pháp Fintech hàng đầu",
+  title: "RIGEL TECH - Công nghệ tài chính số | Giải pháp Fintech hàng đầu",
   description:
-    "Rigel Tech - Đối tác tin cậy trong hành trình chuyển đổi số của doanh nghiệp. Cung cấp giải pháp tài chính số, blockchain và AI tiên tiến.",
+    "RIGEL TECH - Đối tác tin cậy trong hành trình chuyển đổi số của doanh nghiệp. Cung cấp giải pháp tài chính số, blockchain và AI tiên tiến.",
   keywords:
-    "Rigel Tech, fintech, blockchain, AI, digital transformation, financial technology, công nghệ tài chính, chuyển đổi số, tài chính số",
-  authors: [{ name: "Rigel Tech", url: "https://digifund.com.vn" }],
+    "RIGEL TECH, fintech, blockchain, AI, digital transformation, financial technology, công nghệ tài chính, chuyển đổi số, tài chính số",
+  authors: [{ name: "RIGEL TECH", url: "https://digifund.com.vn" }],
   robots: "index, follow",
   alternates: {
     canonical: "https://digifund.com.vn",
@@ -28,16 +28,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://digifund.com.vn",
-    title: "Rigel Tech - Công nghệ tài chính số | Giải pháp Fintech hàng đầu",
+    title: "RIGEL TECH - Công nghệ tài chính số | Giải pháp Fintech hàng đầu",
     description:
-      "Rigel Tech - Đối tác tin cậy trong hành trình chuyển đổi số của doanh nghiệp",
-    siteName: "Rigel Tech",
+      "RIGEL TECH - Đối tác tin cậy trong hành trình chuyển đổi số của doanh nghiệp",
+    siteName: "RIGEL TECH",
     images: [{ url: "/images/og-image.jpg" }],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@Rigel Tech",
-    title: "Rigel Tech - Công nghệ tài chính số | Giải pháp Fintech hàng đầu",
+    site: "@RIGEL TECH",
+    title: "RIGEL TECH - Công nghệ tài chính số | Giải pháp Fintech hàng đầu",
     description: "Giải pháp tài chính số và chuyển đổi số cho doanh nghiệp",
     images: [{ url: "/images/twitter-image.jpg" }],
   },
