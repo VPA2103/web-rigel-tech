@@ -14,9 +14,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-12 gap-8 md:gap-10">
           {/* Company Info - Full width on mobile, larger on desktop */}
           <div className="sm:col-span-2 md:col-span-3 lg:col-span-4 space-y-4 md:space-y-6">
-            <div className="space-y-2">
-              <Link href="/" className="inline-block">
-                <div className="flex flex-col items-center">
+            <div className="space-y-2 ">
+              <Link href="/" className="inline-block ml-12">
+                <div className="flex flex-col items-center ">
                   <Image
                     src="/logo.png"
                     alt="Rigel Logo"
@@ -30,7 +30,7 @@ export default function Footer() {
               </Link>
               <div className="text-left">
                 <span className="text-xs md:text-sm text-gray-400">
-                  CÔNG TY TNHH RIGEL
+                  CÔNG TY TNHH RIGEL TECH
                 </span>
               </div>
             </div>
