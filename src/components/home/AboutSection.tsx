@@ -4,7 +4,7 @@ export default function AboutSection() {
     return (
         <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r text-amber-600">
+                <h2 className="text-4xl font-bold text-center mb-6 bg-clip-text text-transparent bg-gradient-to-r text-blue-500">
                     Về RIGEL TECH
                 </h2>
 
