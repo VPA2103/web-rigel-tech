@@ -6,15 +6,11 @@ export default function AboutPage() {
             <div className="container mx-auto px-4">
                 {/* Company Introduction */}
                 <section className="mb-16">
-                    <h1 className="text-4xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-800">
+                    <h1 className="text-4xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-800 mt-10">
                         Về chúng tôi
                     </h1>
                     <p className="text-lg mb-6">
-                        Rigel Tech là startup công nghệ trẻ với khát vọng trở
-                        thành đơn vị tiên phong trong lĩnh vực phát triển phần
-                        mềm và chuyển đổi số tại Việt Nam. Chúng tôi tự hào đón
-                        đầu xu hướng công nghệ mới và đột phá trong việc phát
-                        triển giải pháp số.
+                        Rigel Tech là công ty công nghệ trẻ với khát vọng trở thành đơn vị tiên phong trong lĩnh vực phát triển phần mềm và chuyển đổi số tại Việt Nam. Chúng tôi luôn đón đầu xu hướng công nghệ mới và không ngừng đổi mới để phát triển các giải pháp số hiệu quả.
                     </p>
                 </section>
 
@@ -25,13 +21,7 @@ export default function AboutPage() {
                             Tầm nhìn
                         </h2>
                         <p className="text-gray-700 leading-relaxed">
-                            Rigel Tech sẽ trở thành công ty công nghệ phần mềm và
-                            chuyển đổi số hàng đầu tại Việt Nam. Luôn tiên phong
-                            nghiên cứu sáng tạo để cung cấp các sản phẩm và giải
-                            pháp dịch vụ có giá trị đạt chất lượng cao nhằm đáp
-                            ứng nhu cầu xã hội góp phần nâng cao chất lượng cuộc
-                            sống của người Việt và nâng tầm vị thế của người
-                            Việt trên thị trường Quốc tế.
+                            Rigel Tech hướng tới trở thành công ty công nghệ phần mềm và chuyển đổi số hàng đầu tại Việt Nam. Chúng tôi tiên phong nghiên cứu, sáng tạo để cung cấp các sản phẩm và giải pháp công nghệ chất lượng cao, đáp ứng nhu cầu xã hội, góp phần nâng cao chất lượng cuộc sống người Việt và khẳng định vị thế Việt Nam trên thị trường quốc tế.
                         </p>
                     </div>
                     <div className="bg-white p-8 rounded-lg shadow-lg">
@@ -39,20 +29,10 @@ export default function AboutPage() {
                             Sứ mệnh
                         </h2>
                         <p className="text-gray-700 mb-4 leading-relaxed">
-                            Là Công ty công nghệ trẻ, ứng biến nhanh, không
-                            ngừng năng cao năng lực sáng tạo của mình nhằm đóng
-                            một vai trò chủ lực trong quá trình chuyển đổi nền
-                            kinh tế số 4.0 của Việt Nam.
+                            Là công ty công nghệ luôn ứng biến nhanh và không ngừng nâng cao năng lực sáng tạo, chúng tôi hướng tới việc đóng vai trò chủ lực trong quá trình chuyển đổi kinh tế số 4.0 của Việt Nam.
                         </p>
                         <p className="text-gray-700 leading-relaxed">
-                            Chúng tôi mang trên mình sứ mệnh cũng như trọng
-                            trách cung cấp các giải pháp, sản phẩm phần mềm,
-                            dịch vụ, các sản phẩm thông minh cho xã hội tại tất
-                            cả các lĩnh vực như viễn thông, ngân hàng tài chính,
-                            đào tạo, giải trí, ứng dụng và chuyển giao công nghệ
-                            có chất lượng cao góp phần vào sự nghiệp công nghiệp
-                            hóa, hiện đại hóa đất nước trong bối cảnh hội nhập
-                            kinh tế Thế giới.
+                            RIGEL TECH mang trên mình sứ mệnh cung cấp các giải pháp công nghệ, sản phẩm phần mềm, dịch vụ số và các sản phẩm thông minh chất lượng cao trong các lĩnh vực như viễn thông, tài chính – ngân hàng, đào tạo, giải trí và chuyển giao công nghệ, góp phần thúc đẩy quá trình công nghiệp hóa, hiện đại hóa đất nước trong bối cảnh hội nhập kinh tế thế giới.
                         </p>
                     </div>
                 </section>

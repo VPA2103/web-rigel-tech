@@ -3,7 +3,7 @@ export const BANNER_IMAGES = [
     id: 1,
     src: "/banner-1.jpg",
     alt: "Banner 1",
-    title: "Công ty cổ phần công nghệ Rigel Tech",
+    title: "CÔNG TY TNHH RIGEL TECH",
     description: "Đối tác tin cậy cho sự phát triển bền vững của doanh nghiệp",
   },
   {

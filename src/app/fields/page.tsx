@@ -58,7 +58,7 @@ export default function FieldsPage() {
 
                     <div className="bg-primary-50 p-10 rounded-xl">
                         <h2 className="text-3xl font-bold text-center mb-8 text-primary-800">
-                            Tại sao chọn giải pháp của DIGIFUND?
+                            Tại sao chọn giải pháp của RIGEL TECH?
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className="bg-white p-6 rounded-lg shadow-md">

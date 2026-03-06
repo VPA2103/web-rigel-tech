@@ -18,11 +18,7 @@ export default function AboutSection() {
                                 Sáng tạo & Chuyên môn
                             </h3>
                             <p className="text-lg leading-relaxed text-gray-800">
-                                Rigel Tech là startup công nghệ, với đội ngũ kỹ sư phần mềm giàu nhiệt
-                                huyết và sáng tạo. Chúng tôi chuyên phát triển
-                                các giải pháp web hiện đại và ứng dụng di động
-                                thông minh, giúp doanh nghiệp bắt kịp xu hướng
-                                công nghệ mới nhất.
+                                Rigel Tech là công ty công nghệ với đội ngũ kỹ sư phần mềm giàu nhiệt huyết và sáng tạo. Chúng tôi chuyên phát triển các giải pháp web hiện đại và ứng dụng di động thông minh, giúp doanh nghiệp bắt kịp xu hướng công nghệ mới.
                             </p>
                         </div>
                         <div className="grid grid-cols-2 gap-6">

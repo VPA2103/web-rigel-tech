@@ -189,4 +189,11 @@ export const SERVICES = [
       "Cung cấp dịch vụ cho thuê máy chủ vật lý và máy chủ ảo (VPS/Cloud). Hỗ trợ cấu hình, bảo mật và quản trị toàn diện, đảm bảo hiệu năng, độ ổn định và khả năng mở rộng cho doanh nghiệp",
     icon: "/icons/servers.png",
   },
+  {
+    title: "Phát triển phần mềm tích hợp và đào tạo AI, Blockchain",
+    subtitle: "Server Rental",
+    description:
+      "Cung cấp giải pháp phát triển phần mềm tích hợp, hỗ trợ ứng dụng AI và Blockchain. Chúng tôi đồng thời đào tạo và chuyển giao công nghệ, giúp doanh nghiệp triển khai hiệu quả các hệ thống thông minh, bảo mật và dễ mở rộng.",
+    icon: "/icons/servers.png",
+  },
 ];

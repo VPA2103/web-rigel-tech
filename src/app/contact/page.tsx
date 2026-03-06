@@ -39,14 +39,32 @@ export default function ContactPage() {
                                 </h3>
                                 <div className="space-y-4">
                                     <div className="flex items-start space-x-4">
+                                        <div>
+                                            <h4 className="font-medium text-gray-800">
+                                                CÔNG TY TNHH RIGEL TECH | MST: 0312689498
+                                            </h4>
+
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start space-x-4">
                                         <span className="text-2xl">📍</span>
                                         <div>
                                             <h4 className="font-medium text-gray-800">
-                                                Địa chỉ
+                                                Trụ sở chính
                                             </h4>
                                             <p className="text-gray-500">
-                                                156 Nam Kỳ Khởi Nghĩa, P. Bến
-                                                Nghé, Q.1, TP.HCM
+                                                282 Đường số 13, Phường Phước Long, TP. Hồ Chí Minh, Việt Nam.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start space-x-4">
+                                        <span className="text-2xl">📍</span>
+                                        <div>
+                                            <h4 className="font-medium text-gray-800">
+                                                VP giao dịch
+                                            </h4>
+                                            <p className="text-gray-500">
+                                                156 Nam Kỳ Khởi Nghĩa, Phường Sài Gòn, TP. Hồ Chí Minh, Việt Nam.
                                             </p>
                                         </div>
                                     </div>
@@ -54,7 +72,7 @@ export default function ContactPage() {
                                         <span className="text-2xl">📞</span>
                                         <div>
                                             <h4 className="font-medium text-gray-800">
-                                                Điện thoại
+                                                Hotline
                                             </h4>
                                             <p className="text-gray-500">
                                                 0938.065.499
@@ -68,7 +86,19 @@ export default function ContactPage() {
                                                 Email
                                             </h4>
                                             <p className="text-gray-500">
-                                                info@digifund.tech
+                                                info@dongsangviet.com
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="flex items-start space-x-4">
+                                        <span className="text-2xl">✉️</span>
+                                        <div>
+                                            <h4 className="font-medium text-gray-800">
+                                                Website:
+                                            </h4>
+                                            
+                                            <p className="text-gray-500">
+                                                www.rigeltech.vn
                                             </p>
                                         </div>
                                     </div>
