@@ -18,7 +18,7 @@ export default function Footer() {
               <Link href="/" className="inline-block">
                 <div className="flex flex-col items-center">
                   <Image
-                    src="/logo-nobackground.png"
+                    src="/logo.png"
                     alt="Rigel Logo"
                     width={80}
                     height={80}
@@ -30,7 +30,7 @@ export default function Footer() {
               </Link>
               <div className="text-left">
                 <span className="text-xs md:text-sm text-gray-400">
-                  Rigel Tech
+                  CÔNG TY TNHH RIGEL
                 </span>
               </div>
             </div>
@@ -117,6 +117,22 @@ export default function Footer() {
             </h4>
             <div className="space-y-2 md:space-y-3">
               <p className="flex items-start text-sm md:text-base text-gray-400">
+                <a
+                  href="https://maps.google.com/?q=156+Nam+Kỳ+Khởi+Nghĩa+Phường+Bến+Nghé+Quận+1+Thành+phố+Hồ+Chí+Minh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary-400 transition-colors duration-300"
+                  itemProp="address"
+                  itemScope
+                  itemType="https://schema.org/PostalAddress"
+                >
+                  <span itemProp="streetAddress">
+                    CÔNG TY TNHH RIGEL TECH | MST: 0312689498
+                  </span>
+
+                </a>
+              </p>
+              <p className="flex items-start text-sm md:text-base text-gray-400">
                 <span className="w-5 mr-2 md:mr-3 flex-shrink-0 mt-0.5">
                   <FaMapMarkerAlt className="w-4 h-4" />
                 </span>
@@ -130,19 +146,29 @@ export default function Footer() {
                   itemType="https://schema.org/PostalAddress"
                 >
                   <span itemProp="streetAddress">
-                    Số 282 đường 13
-                  </span>
-                  , {/* Added space */}
-                  <span itemProp="addressLocality">Phường Phước Bình</span>,{" "}
-                  {/* Added space */}
-                  <span itemProp="addressRegion">Quận 9</span>,{" "}
-                  {/* Added space */}
-                  <span itemProp="addressCountry">
-                    Thành phố Hồ Chí Minh, Việt Nam
+                    Trụ sở chính: 282 Đường số 13, Phường Phước Long, TP. Hồ Chí Minh, Việt Nam.
                   </span>
                 </a>
               </p>
-              
+              <p className="flex items-start text-sm md:text-base text-gray-400">
+                <span className="w-5 mr-2 md:mr-3 flex-shrink-0 mt-0.5">
+                  <FaMapMarkerAlt className="w-4 h-4" />
+                </span>
+                <a
+                  href="https://maps.google.com/?q=156+Nam+Kỳ+Khởi+Nghĩa+Phường+Bến+Nghé+Quận+1+Thành+phố+Hồ+Chí+Minh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary-400 transition-colors duration-300"
+                  itemProp="address"
+                  itemScope
+                  itemType="https://schema.org/PostalAddress"
+                >
+                  <span itemProp="streetAddress">
+                    VP giao dịch: 156 Nam Kỳ Khởi Nghĩa, Phường Sài Gòn, TP. Hồ Chí Minh, Việt Nam.
+                  </span>
+                </a>
+              </p>
+
               <p className="flex items-center text-sm md:text-base text-gray-400">
                 <span className="w-5 mr-2 md:mr-3 flex-shrink-0">📱</span>
                 <a
@@ -156,11 +182,21 @@ export default function Footer() {
               <p className="flex items-center text-sm md:text-base text-gray-400">
                 <span className="w-5 mr-2 md:mr-3 flex-shrink-0">✉️</span>
                 <a
-                  href="mailto:info@digifund.tech"
+                  href="mailto:info@dongsangviet.com"
                   className="hover:text-primary-400 transition-colors duration-300"
                   itemProp="email"
                 >
-                  info@digifund.tech
+                  info@dongsangviet.com
+                </a>
+              </p>
+              <p className="flex items-center text-sm md:text-base text-gray-400">
+                <span className="w-5 mr-2 md:mr-3 flex-shrink-0">✉️</span>
+                <a
+                  href="mailto:info@dongsangviet.com"
+                  className="hover:text-primary-400 transition-colors duration-300"
+                  itemProp="email"
+                >
+                  Website: www.rigeltech.vn
                 </a>
               </p>
             </div>
@@ -171,8 +207,8 @@ export default function Footer() {
         <div className="mt-10 md:mt-12 lg:mt-16 pt-6 md:pt-8 border-t border-gray-800">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p className="text-xs md:text-sm text-gray-400 text-center sm:text-left">
-              &copy; {new Date().getFullYear()}{" "}
-              <span itemProp="name">Rigel Tech</span>. All rights reserved.
+              &copy; {2014}{" "}
+              <span itemProp="name">RIGELTECH</span>. Co., Ltd. All Rights Reserved.
             </p>
             <div className="flex space-x-4 md:space-x-6">
               <Link

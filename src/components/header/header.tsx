@@ -12,22 +12,22 @@ export default function Header() {
     };
 
     return (
-      <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md z-50 shadow-sm">
-        <div className="container mx-auto px-4 h-20 flex items-center justify-between">
+      <header className="fixed top-0 left-0 right-0 bg-white backdrop-blur-md z-50 shadow-sm">
+        <div className="container mx-auto px-4 h-20 flex items-center justify-between mb-3">
           <Link
             href="/"
-            className="flex flex-col items-center gap-1"
+            className="flex flex-col items-center gap-1 mt-3"
             onClick={handleNavigate}
           >
             <Image
-              src="/logo-nobackground.png"
+              src="/logo.png"
               alt="DIGIFUND Logo"
               width={50}
               height={50}
               className="object-contain"
             />
-            <span className="text-2xl font-bold text-[#ffbd59] -mt-3">
-              Rigel Tech
+            <span className="text-2xl font-bold text-[#866129]">
+              RIGEL TECH
             </span>
           </Link>
 
