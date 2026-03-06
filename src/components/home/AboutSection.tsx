@@ -4,13 +4,10 @@ export default function AboutSection() {
     return (
         <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-50">
             <div className="container mx-auto px-4">
-                <h2 className="text-4xl font-bold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-800">
-                    Về Rigel Tech
+                <h2 className="text-4xl font-bold text-center mb-4 bg-clip-text text-transparent bg-gradient-to-r text-amber-600">
+                    Về RIGEL TECH
                 </h2>
-                <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-                    Đối tác công nghệ trẻ, năng động trong phát triển giải pháp
-                    web và ứng dụng di động
-                </p>
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
                         <div className="space-y-4">

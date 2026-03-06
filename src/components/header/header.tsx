@@ -13,10 +13,10 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white backdrop-blur-md z-50 shadow-sm">
-      <div className="container mx-auto px-4 h-20 flex items-center justify-between mb-10">
+      <div className="container mx-auto px-4 h-20 flex items-center justify-between mb-11">
         <Link
           href="/"
-          className="flex flex-col items-center gap-0 mt-10"
+          className="flex flex-col items-center gap-0 mt-11 "
           onClick={handleNavigate}
         >
           <Image
@@ -26,10 +26,10 @@ export default function Header() {
             height={50}
             className="object-contain"
           />
-          <span className="text-xl font-bold text-[#866129]">
+          <span className=" font-bold text-xl text-[#866129]">
             RIGEL TECH
-          </span>
-          <span className="text-xs font-bold text-[#866129]">
+          </span> 
+          <span className="text-xs+1 font-bold text-[#866129]">
             Kiến tạo giá trị từ công nghệ
           </span>
         </Link>
